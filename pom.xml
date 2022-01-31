@@ -16,6 +16,12 @@
 
   <name>maven-starter</name>
 
+  <scm>
+    <connection>scm:git:git@github.com:Sergei-JD/maven-starter.git</connection>
+    <developerConnection>scm:git:git@github.com:Sergei-JD/maven-starter.git</developerConnection>
+    <url>https://git@github.com:Sergei-JD/maven-starter.git</url>
+  </scm>
+
 <!--  project.groupId-->
 <!--  settings.-->
 <!--  ${spring.version}-->
@@ -73,8 +79,16 @@
         <filtering>true</filtering>
       </resource>
     </resources>
-    <finalName>ROOT</finalName>
+<!--    <finalName>ROOT</finalName>-->
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M1</version>
+<!--        <configuration>-->
+<!--          <allowTimestampedSnapshots>true</allowTimestampedSnapshots>-->
+<!--        </configuration>-->
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
