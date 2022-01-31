@@ -1,18 +1,18 @@
 package com.maven;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest {
+public class AppTes {
     /**
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void shouldAnswerWithTrue2()
     {
         assertTrue( true );
     }
